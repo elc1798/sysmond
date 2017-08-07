@@ -15,6 +15,7 @@ var (
 	MONITORS = []sysmon.Monitor{
 		&sysmon.CPUMonitor{},
 		&sysmon.MemoryMonitor{},
+		&sysmon.LoadMonitor{},
 	}
 
 	MONITOR_FIELD_METRICS = make(map[string]prometheus.Collector)
